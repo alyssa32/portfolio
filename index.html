@@ -16,9 +16,9 @@
         --cream: #f5f1eb;
         --beige: #e8e0d5;
         --beige-dark: #d4c9bc;
-        --green: #4a5d4a;
-        --green-light: #6b7d6b;
-        --green-dark: #3a4a3a;
+        --green: #4a644a;
+        --green-light: #698269;
+        --green-dark: #3d523d;
         --text: #2c2c2c;
         --text-light: #5a5a5a;
       }
@@ -230,12 +230,13 @@
       /* ════════════════════════════════
          HERO NAME — word-by-word reveal
       ════════════════════════════════ */
-      .hero-word {
-        display: inline-block;
-        overflow: hidden;
-        vertical-align: bottom;
-        line-height: 1.1;
-      }
+  .hero-word {
+  display: inline-block;
+  overflow: visible;
+  vertical-align: bottom;
+  line-height: 1.15;
+  padding-bottom: 0.08em;
+}
       .hero-word-inner {
         display: inline-block;
         transform: translateY(100%);
@@ -367,19 +368,21 @@
         gap: 0.75rem;
         margin-top: 2rem;
       }
-      .skill-tag {
-        padding: 0.5rem 1rem;
-        background: var(--beige);
-        border-radius: 25px;
-        font-size: 0.85rem;
-        color: var(--text);
-        transition: all 0.3s ease;
-      }
-      .skill-tag:hover {
-        background: var(--green);
-        color: var(--white);
-        transform: translateY(-2px);
-      }
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background: rgba(111, 147, 111, 0.3);
+  border: 1px solid rgba(105, 130, 105, 0.18);
+  border-radius: 25px;
+  font-size: 0.85rem;
+  color: var(--green-dark);
+  transition: all 0.25s ease;
+}
+.skill-tag:hover {
+  background: rgba(105, 140, 105, 0.4);
+  border-color: rgba(105, 130, 105, 0.28);
+  color: var(--green-dark);
+  transform: translateY(-1px);
+}
 
       /* ════════════════════════════════
          PROJECTS
@@ -1049,30 +1052,27 @@
         </div>
         <div class="about-text">
           <!-- Hero name: words split for staggered reveal -->
-          <h1>
-            <span class="hero-word"
-              ><span class="hero-word-inner" style="animation-delay: 0.1s"
-                >Alyssa</span
-              ></span
-            >
-            <span style="display: inline-block; width: 0.35em"></span>
-            <span class="hero-word"
-              ><span class="hero-word-inner" style="animation-delay: 0.45s"
-                >Durdey</span
-              ></span
-            >
-          </h1>
+        <h1>
+  <span class="hero-word">
+    <span class="hero-word-inner" style="animation-delay: 0.1s">Alyssa</span>
+  </span>
+  <span class="hero-word">
+    <span class="hero-word-inner" style="animation-delay: 0.45s">Durdey</span>
+  </span>
+</h1>
           <!-- Typewriter subtitle -->
-          <p class="subtitle typewriter">Computational Artist &amp; Designer</p>
+          <p class="subtitle typewriter">Digital Artist &amp; Designer</p>
           <p class="artist-statement reveal" style="--delay: 0.15s">
-           My artistic practice explores the complex relationship between nature, 
-           technology, and human influence. Through a combination of 3D modeling, 
-           drawing, and mixed media, I look at how perception shapes our understanding 
-           of the environment and challenge the ways we interact with the natural world. 
-           My work often reflects on how nature is framed, controlled, or altered, inviting 
-           viewers to reconsider what is seen.  My work serves as a bridge between reality 
-           and perception, encouraging a deeper awareness of the environment and our place 
-           within it.
+        I am a multidisciplinary artist and designer exploring the intersection of art
+         and technology. My practice includes 3D modeling, digital interactivity, virtual 
+         reality, UX/UI design, and traditional drawing. Working with tools such as Blender, 
+         Figma, and Adobe Premiere Pro, and I also have experience with Unreal Engine.  </p>
+         <p class="artist-statement reveal" style="--delay: 0.15s">
+With a foundation in Commerce and Computation Arts from Concordia University, I bring a unique 
+blend of artistic, technical, and business perspectives to my work. As a recent graduate, I am 
+eager to continue developing my technical and artistic skills through new creative and professional 
+opportunities!
+
       
           </p>
           <div class="skills-tags">
@@ -1209,14 +1209,23 @@
           <div class="resume-item reveal" style="--delay: 0.1s">
             <span class="resume-date">2023 — 2026</span>
             <div class="resume-details">
-              <h4>Bachelor of Computation Arts</h4>
+              <h4>Bachelor in the Specialization in Computation Arts</h4>
               <p class="company">Concordia University</p>
               <p>
                 Focus on 3D modeling, UX/UI design, and sustainable design
                 practices.
               </p>
             </div>
+                 <span class="resume-date">2019 — 2021</span>
+            <div class="resume-details">
+              <h4>DEC in Commerce</h4>
+              <p class="company">John Abbott College</p>
+              <p>
+                Focus on marketing and sales management with a business foundation.
+              </p>
+            </div>
           </div>
+      
         </div>
         <div class="resume-section">
           <h3 class="reveal" style="--delay: 0s">Experience</h3>
@@ -1279,7 +1288,7 @@
           <p>
             I'm currently seeking opportunities in 3D design and UX/UI. Whether
             you have a project in mind or just want to connect, I'd love to hear
-            from you.
+            from you!
           </p>
           <div class="contact-links">
             <a href="mailto:alyssa.durdey@yahoo.ca" class="contact-link">
@@ -1299,7 +1308,7 @@
               alyssa.durdey@yahoo.ca
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/alyssa-durdey"
               class="contact-link"
               target="_blank"
             >
@@ -1427,8 +1436,8 @@
           category: "Traditional Art",
           title: "Pet Portrait Series",
           hero: "images/drawing_1.jpeg",
-          desc: "A collection of charcoal and graphite portraits exploring identity and stillness. Each subject was drawn from long observation sessions rather than photographs, resulting in works that capture presence over likeness. The series challenges the boundary between representation and abstraction through deliberate mark-making and selective erasure.",
-          tools: ["Pencil", "Animal Studies"],
+          desc: "These graphite pet portraits are hand-drawn from client photographs in pencil with an emphasis on realism and detail. Whether the pet has passed away or has been recently adopted, I focus on capturing the personality of each animal. These commissioned pieces, created in sizes ranging from 4 × 6 inches to 8.5 × 11 inches, serve as lasting keepsakes for their owners.",
+          tools: ["Pencil", "Animal Studies", "Small Business"],
           imgs: [
             "images/drawing_2.jpeg",
             "images/drawing_3.jpeg",
